@@ -1,8 +1,19 @@
-# MDRend - Python Markdown Renderer in the browser
-This tool will be run as follows:
+# mdrend
+
+A minimal markdown renderer for the terminal. No config, no server, no extras.
+
 ```bash
-uv run mdrend <filename>
+mdrend file.md
 ```
-```python
-\nassert 1 == 1
+
+Opens `file.md` as a styled HTML page in your browser. That's it.
+
+## Install
+
+```bash
+pip install mdrend
 ```
+
+## Why
+
+I wanted to see what my markdown looks like without opening VS Code, spinning up a preview server, or installing a heavy tool. `mdrend` is just: run it, see it.

@@ -1,7 +1,7 @@
 [project]
 name = "mdrend"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.1.1"
+description = "CLI tool that allows you to view local markdown files in browser while writing"
 readme = "README.md"
 authors = [
     { name = "Nitin Rao", email = "nitinsprao@gmail.com" }
@@ -13,12 +13,18 @@ dependencies = [
     "mistune>=3.2.0",
     "pygments>=2.19.2",
 ]
+license="MIT"
+license-files=["LICEN[CS]E*"]
+
+[project.urls]
+Repository = "https://github.com/NitinSPRao/mdrend"
 
 [project.scripts]
 mdrend = "mdrend.cli:main"
 
 [tool.setuptools.package-data]
 mdrend = ["templates/*.html"]
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
